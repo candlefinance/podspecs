@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/EmergeTools/Pow"
   s.license      = "MIT"
   s.author       = { "EmergeTools" => "info@emerge.tools" }
-  s.source       = { :git => "https://github.com/gtokman/Pow", :tag => "#{s.version}" }
+  s.source = { :git => "https://github.com/gtokman/Pow", :branch => "main" }
   s.platform     = :ios, "15.0"
   s.source_files = "Sources/**/*.swift"
   s.resources = ['Sources/Pow/Resources/**/*.m4a', 'Sources/Pow/Resources/**/*.xcassets']
