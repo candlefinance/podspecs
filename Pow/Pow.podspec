@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/gtokman/Pow", :tag => "#{s.version}" }
   s.platform     = :ios, "15.0"
   s.source_files = "Sources/**/*.swift"
-  s.resources = "Sources/**/*.m4a"
+  s.resources = ['Sources/Pow/Resources/**/*.m4a', 'Sources/Pow/Resources/**/*.xcassets']
   s.swift_version = "5.5"
 end
