@@ -1,17 +1,20 @@
 Pod::Spec.new do |s|
   s.name         = 'MLX'
   s.version      = '0.16.0'
-  s.summary      = 'A short description of MLX.'
+  s.summary      = 'Machine Learning extensions for Swift.'
   s.description  = <<-DESC
-                   A longer description of MLX.
+                   MLX is a suite of machine learning utilities and extensions for Swift. 
+                   It enhances and simplifies the development of machine learning applications.
                    DESC
-  s.homepage     = 'https://example.com/MLX'
+  s.homepage     = 'https://github.com/ml-explore/mlx-swift'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
-  s.author       = { 'Author' => 'author@example.com' }
-  s.source       = { :git => 'https://example.com/MLX.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '10.0'
-  s.source_files = 'Sources/**/*.{swift,h,m,cpp}'
-
+  s.author       = { 'Gary Tokman' => 'gary@candle.fi' }
+  s.source       = { :git => 'https://github.com/ml-explore/mlx-swift.git', :branch => 'main', :submodules => true }
+  s.platform     = :ios, '17.0'
+  s.swift_version = '5.0'
+  s.source_files = 'Sources/**/*.{swift}'
+  s.exclude_files = 'Sources/Examples/**/*'
+  s.resources = ['cmake/**/*', 'tools/**/*', 'Plugins/**/*']
   s.default_subspecs = 'Cmlx', 'MLX', 'MLXFFT', 'MLXFast', 'MLXLinalg', 'MLXNN', 'MLXOptimizers', 'MLXRandom', 'Tools'
 
   s.subspec 'Cmlx' do |cm|
@@ -49,4 +52,5 @@ Pod::Spec.new do |s|
   s.subspec 'Tools' do |tools|
     tools.source_files = 'Sources/Tools/**/*.{swift}'
   end
+
 end
