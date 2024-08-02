@@ -11,4 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '17.0'
   s.source_files = 'Sources/**/*.{swift,h,m,cpp}'
 
+  s.subspec '_NumericsShims' do |shims|
+    shims.source_files = 'Sources/_NumericsShims/**/*.{swift}'
+  end
 end
