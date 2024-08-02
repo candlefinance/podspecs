@@ -18,6 +18,9 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Sources/**/*.h'
 
   s.dependency 'swift-numerics', '0.1.0'
+  s.resources = ['cmake/**/*', 'tools/**/*', 'Plugins/**/*']
+
+  s.default_subspecs = 'Cmlx', 'MLX', 'MLXFFT', 'MLXFast', 'MLXLinalg', 'MLXNN', 'MLXOptimizers', 'MLXRandom', 'Tools'
 
   # Settings for C and C++ sources
   s.pod_target_xcconfig = {
