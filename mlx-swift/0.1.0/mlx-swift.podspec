@@ -35,41 +35,30 @@ Pod::Spec.new do |s|
 
   s.subspec 'MLX' do |mlx|
     mlx.source_files = 'Source/MLX/**/*.{swift}'
-    mlx.dependency 'Cmlx'
     mlx.dependency 'swift-numerics', '0.1.0'
   end
 
   s.subspec 'MLXRandom' do |rand|
     rand.source_files = 'Source/MLXRandom/**/*.{swift}'
-    rand.dependency 'MLX'
   end
 
   s.subspec 'MLXFast' do |fast|
     fast.source_files = 'Source/MLXFast/**/*.{swift}'
-    fast.dependency 'MLX'
-    fast.dependency 'Cmlx'
   end
 
   s.subspec 'MLXNN' do |nn|
     nn.source_files = 'Source/MLXNN/**/*.{swift}'
-    nn.dependency 'MLX'
-    nn.dependency 'MLXRandom'
-    nn.dependency 'MLXFast'
   end
 
   s.subspec 'MLXOptimizers' do |opt|
     opt.source_files = 'Source/MLXOptimizers/**/*.{swift}'
-    opt.dependency 'MLX'
-    opt.dependency 'MLXNN'
   end
 
   s.subspec 'MLXFFT' do |fft|
     fft.source_files = 'Source/MLXFFT/**/*.{swift}'
-    fft.dependency 'MLX'
   end
 
   s.subspec 'MLXLinalg' do |linalg|
     linalg.source_files = 'Source/MLXLinalg/**/*.{swift}'
-    linalg.dependency 'MLX'
   end
 end
