@@ -12,6 +12,8 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/**/*.{swift,h,m,cpp}'
 
   s.subspec '_NumericsShims' do |shims|
-    shims.source_files = 'Sources/_NumericsShims/**/*.{swift}'
+    shims.source_files = 'Sources/_NumericsShims/**/*.{swift,h,m,cpp,c}'
+    shims.exclude_files = 'Sources/_NumericsShims/Tests/**/*'
+    shims.public_header_files = 'Sources/_NumericsShims/**/*.h'
   end
 end
