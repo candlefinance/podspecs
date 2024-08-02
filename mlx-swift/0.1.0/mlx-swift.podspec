@@ -63,11 +63,11 @@ Pod::Spec.new do |s|
 
   s.subspec 'MLXFFT' do |fft|
     fft.source_files = 'Sources/MLXFFT/**/*.{swift}'
-    fft.dependency 'MLX'
+    fft.dependency 'mlx-swift/MLX'
   end
 
   s.subspec 'MLXLinalg' do |linalg|
     linalg.source_files = 'Sources/MLXLinalg/**/*.{swift}'
-    linalg.dependency 'MLX'
+    linalg.dependency 'mlx-swift/MLX'
   end
 end
