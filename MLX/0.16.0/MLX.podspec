@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   s.resources = ['cmake/**/*', 'tools/**/*', 'Plugins/**/*']
   s.default_subspecs = 'Cmlx', 'MLX', 'MLXFFT', 'MLXFast', 'MLXLinalg', 'MLXNN', 'MLXOptimizers', 'MLXRandom', 'Tools'
 
+  s.dependency 'Numerics'
+
   s.subspec 'Cmlx' do |cm|
     cm.source_files = 'Sources/Cmlx/**/*.{swift,h,m,cpp}'
   end
