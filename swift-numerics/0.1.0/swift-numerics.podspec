@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'Numerics'
+  s.name         = 'swift-numerics'
   s.version      = '0.1.0'
   s.summary      = 'Machine Learning extensions for Swift.'
   s.description  = <<-DESC
