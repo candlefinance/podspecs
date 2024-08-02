@@ -15,4 +15,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/MLXRandom/**/*.{swift}'
   s.exclude_files = 'Source/MLXRandom/**/*.md'
+
+  s.dependency 'MLX'
+  s.dependency 'Cmlx'
 end

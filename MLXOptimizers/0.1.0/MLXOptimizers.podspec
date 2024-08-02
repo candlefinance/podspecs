@@ -15,4 +15,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Source/MLXOptimizers/**/*.{swift}'
   s.exclude_files = 'Source/MLXOptimizers/**/*.md'
+
+  s.dependency 'MLX', '~> 0.1.0'
+  s.dependency 'MLXNN', '~> 0.1.0'
 end

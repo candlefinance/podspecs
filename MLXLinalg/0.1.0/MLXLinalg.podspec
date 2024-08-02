@@ -13,6 +13,9 @@ Pod::Spec.new do |s|
   s.swift_version     = '5.9'
   s.requires_arc      = true
 
+  s.dependency 'MLX', '0.1.0'
+  s.dependency 'Cmlx', '0.1.0'
+
   s.source_files = 'Source/MLXLinalg/**/*.{swift}'
   s.exclude_files = 'Source/MLXLinalg/**/*.md'
 end

@@ -13,6 +13,10 @@ Pod::Spec.new do |s|
   s.swift_version     = '5.9'
   s.requires_arc      = true
 
+  s.dependency 'MLX', '0.1.0'
+  s.dependency 'MLXRandom', '0.1.0'
+  s.dependency 'MLXFast', '0.1.0'
+
   s.source_files = 'Source/MLXNN/**/*.{swift}'
   s.exclude_files = 'Source/MLXFastNN/**/*.md'
 end
