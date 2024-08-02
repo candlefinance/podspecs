@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
   s.exclude_files     = 'Sources/Examples/**/*'
   s.public_header_files = 'Sources/**/*.h'
 
-  s.dependency 'swift-numerics', '0.1.0'
   s.resources = ['cmake/**/*', 'tools/**/*', 'Plugins/**/*']
 
   s.default_subspecs = 'Cmlx', 'MLX', 'MLXFFT', 'MLXFast', 'MLXLinalg', 'MLXNN', 'MLXOptimizers', 'MLXRandom'
