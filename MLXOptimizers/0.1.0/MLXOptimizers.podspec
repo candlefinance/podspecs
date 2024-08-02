@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name              = 'mlx-swift'
+  s.name              = 'MLXOptimizers'
   s.version           = '0.1.0'
   s.summary           = 'Machine Learning extensions for Swift with Metal backend.'
   s.description       = <<-DESC
@@ -13,16 +13,6 @@ Pod::Spec.new do |s|
   s.swift_version     = '5.9'
   s.requires_arc      = true
 
-
-  s.dependency 'MLX', '~> 0.1.0'
-  s.dependency 'MLXFast', '~> 0.1.0'
-  s.dependency 'MLXFFT', '~> 0.1.0'
-  s.dependency 'Tools', '~> 0.1.0'
-  s.dependency 'Cmlx', '~> 0.1.0'
-  s.dependency 'MLXLinalg', '~> 0.1.0'
-  s.dependency 'MLXNN', '~> 0.1.0'
-  s.dependency 'MLXOptimizers', '~> 0.1.0'
-  s.dependency 'MLXRandom', '~> 0.1.0'
-
-  
+  s.source_files = 'Source/MLXOptimizers/**/*.{swift}'
+  s.exclude_files = 'Source/MLXOptimizers/**/*.md'
 end
