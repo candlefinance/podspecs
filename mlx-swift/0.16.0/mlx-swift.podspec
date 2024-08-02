@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name              = 'MLX'
+  s.name              = 'mlx-swift'
   s.version           = '0.1.0'
   s.summary           = 'Machine Learning extensions for Swift with Metal backend.'
   s.description       = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.exclude_files     = 'Sources/Examples/**/*'
   s.public_header_files = 'Sources/**/*.h'
 
-  s.dependency 'Numerics', '0.1.0'
+  s.dependency 'swift-numerics', '0.1.0'
 
   # Settings for C and C++ sources
   s.pod_target_xcconfig = {
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.subspec 'MLX' do |mlx|
     mlx.source_files = 'Sources/MLX/**/*.{swift}'
     mlx.dependency 'Cmlx'
-    mlx.dependency 'swift-numerics', '1.0.0'
+    mlx.dependency 'swift-numerics', '0.1.0'
   end
 
   s.subspec 'MLXRandom' do |rand|

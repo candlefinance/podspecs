@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'Author' => 'author@example.com' }
   s.source       = { :git => 'https://github.com/apple/swift-numerics.git', :branch => 'main' }
-  s.ios.deployment_target = '17.0'
+  s.ios.deployment_target = '16.0'
   s.source_files = 'Sources/**/*.{swift,h,m,cpp}'
 
   s.subspec '_NumericsShims' do |shims|
