@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.homepage          = 'https://github.com/ml-explore/mlx-swift'
   s.license           = { :type => 'MIT', :file => 'LICENSE' }
   s.author            = { 'gary' => 'gary@candle.fi' }
-  s.source            = { :git => 'https://github.com/ml-explore/mlx-swift.git', :tag => s.version.to_s }
+  s.source            = { :git => 'https://github.com/ml-explore/mlx-swift.git', :branch => 'main', submodules: true }
   s.platforms         = { :ios => '16.0', :macos => '13.3' }
   s.swift_version     = '5.9'
   s.requires_arc      = true
